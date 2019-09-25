@@ -2,8 +2,10 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var express = require('express');
-var port = process.env.PORT||2000
+var port = process.env.PORT||8080
 var nicknames = {}
+
+// For me it was let port = process.env.PORT || 8080; along with app.listen(port)
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
@@ -49,6 +51,6 @@ io.on('connection', function (socket) {
 
 app.use(express.static('public'));
 
-http.listen(4000 , function () {
+http.listen(port , function () {
   console.log('listening on *:' + port);
 });
