@@ -2,7 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var express = require('express');
-var port = process.env.port||2000
+var port = process.env.PORT||2000
 var nicknames = {}
 
 app.get('/', function (req, res) {
@@ -49,6 +49,6 @@ io.on('connection', function (socket) {
 
 app.use(express.static('public'));
 
-http.listen(port, function () {
+http.listen(4000 , function () {
   console.log('listening on *:' + port);
 });
