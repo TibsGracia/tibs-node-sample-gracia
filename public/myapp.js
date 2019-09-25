@@ -1,7 +1,7 @@
 
 $("#send_username").on('click', function (e) {
     e.preventDefault();
-    var socket = io.connect('http://localhost:5000')
+    var socket = io();
     var message = $("#message-to-send");
     var username = $("#username");
     $('.login_form').hide();
