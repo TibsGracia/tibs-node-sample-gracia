@@ -1,0 +1,370 @@
+body {
+	background: linear-gradient(rgba(204,204,204,0.5), rgba(204,204,204,0.5)), url(/images/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font: 14px/20px "Lato", Arial, sans-serif;
+	padding: 0;
+	color: white;
+	margin: 0;
+}
+
+.container {
+	margin: 50px auto;
+	width: 90%;
+	background: rgb(246, 248, 248);
+	border-radius: 10px;
+	display: none;
+	box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+input {
+	border-radius: 3px;
+	border-color: #444753;
+	padding: 14px;
+	color: black;
+	background: white;
+	width: 100%;
+	font-size: 14px;
+	margin: auto;
+	float: center;
+}
+
+.chat {
+	width: 75%;
+	float: center;
+	background:  rgb(246, 248, 248);
+	/* border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px; */
+	color: black;
+}
+
+.chat-header {
+	padding: 3%;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	width: 100%;
+
+}
+
+.chat-history {
+	padding: 30px 30px 20px;
+	border-bottom: 2px solid white;
+	overflow-y: scroll;
+	height: 450px;
+	width: 100%;
+}
+
+.message {
+	color: white;
+	padding: 18px 20px;
+	line-height: 26px;
+	font-size: 16px;
+	border-radius: 7px;
+	margin-bottom: 30px;
+	width: 50%;
+	position: relative;
+}
+
+.chat-message {
+	padding: 30px;
+	border-right: 2px solid white;
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	padding: 10px 20px;
+	font: 14px/22px "Lato", Arial, sans-serif;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	resize: none;
+}
+
+#send {
+	float: right;
+}
+
+button:hover {
+	color: darken(blue, 7%);
+}
+
+
+.talk-bubble {
+	margin: 40px;
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: auto;
+	background-color: lightyellow;
+}
+
+
+
+.round {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.speech {
+	position: relative;
+	background: #ff8080;
+	border-radius: .4em;
+	padding: 20px;
+	padding-bottom: 5px;
+	text-align: left;
+	color: black;
+	font-family: arial;
+	width: 300px;
+	float: left;
+	margin: 5px auto;
+	margin-right: 100%;
+}
+
+.sb:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 22px solid transparent;
+	border-right-color: #ff8080;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -11px;
+	margin-left: -22px;
+}
+
+.box {
+	border-radius: .4em;
+	width: 300px;
+	float: right;
+	background: #51e92b;
+	padding: 20px;
+	padding-bottom: 5px;
+	text-align: left;
+	color: black;
+	font-family: arial;
+	position: relative;
+	margin: 5px auto;
+	margin-left: 100%;
+}
+
+
+.sb1:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid #51e92b;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #51e92b;
+	border-bottom: 10px solid transparent;
+	right: -20px;
+	top: 6px;
+}
+
+#change_username {
+	color: white;
+	padding: 18px 20px;
+	line-height: 26px;
+	font-size: 16px;
+	border-radius: 7px;
+	margin-bottom: 30px;
+	width: 50%;
+	position: relative;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: auto;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+img.users {
+	width: 60%;
+	border-radius: 50%;
+}
+img.user {
+	width: 5%;
+	padding: 5px;
+}
+
+.login {
+	padding: 5px;
+	width: 300px;
+	margin: auto;
+}
+
+
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0)
+	}
+
+	to {
+		-webkit-transform: scale(1)
+	}
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0)
+	}
+
+	to {
+		transform: scale(1)
+	}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+.login_form {
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	border-radius: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 30px;
+	background-color: #fff;
+	position: relative;
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 20px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+	display: block;
+}
+
+#send_username {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#typing {
+	height: 15px;
+	color: #b0b2b9f1;
+	font-style: italic;
+}
+
+.join_chat {
+	text-align: center;
+	font-style: italic;
+	font-size: 15px;
+	color: #b0b2b9f1;
+	width: 100%;
+	padding: 10px;
+}
+
+.online_box {
+	width: 22%;
+	float: right;
+	background: rgb(246, 248, 248);
+	/* border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px; */
+	color: black;
+	padding: 5%;
+	padding-left: 5%;
+	font-size: 15px;
+	display: block;
+	height: 820px;;
+	overflow-y: scroll;
+	margin-top: 10px;
+}
+.online{
+	color: #000;
+	font-size: 15px;
+}
+
+.online_box::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.online_box::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.online_box::-webkit-scrollbar-thumb
+{
+	background-color:  #555555;
+	border: 2px solid #555555;
+}
+
+
+ 
+  .not_online::before {
+	content: "\2022";
+	color: red;
+	font-weight: bold;
+	display: inline-block;
+	width: 0.7em;
+	margin-left: -1em;
+	margin-bottom: -1em;
+	font-size: 2em;  
+	text-shadow: 0 0 5px red;
+	font-size: 20px;
+  }
+  .online::before {
+	content: "\2022";
+	color: green;
+	font-weight: bold;
+	display: inline-block;
+	width: 0.7em;
+	margin-left: -1em;
+	margin-bottom: -1em;
+	font-size: 2em;
+	text-shadow: 0 0 5px green;
+	font-size: 20px;
+  }
+  h1 {
+    background-color: rgba(45, 213, 255, 0.671);
+    padding: 10px;
+	font-family: fantasy;
+	position: relative;
+	margin-top: 20px;
+	text-align: center
+}
+h3{
+	padding: 10px;
+	font-family: cursive;
+	position: relative;
+	margin-top: 20px;
+	text-align: center
+}
+p.time{
+	margin: 10px;
+	text-align: right;
+	font-size: 10px;
+}
+h5{
+	padding: 5px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	position: relative;
+}
+
